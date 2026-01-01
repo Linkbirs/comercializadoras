@@ -40,7 +40,6 @@ header{
 
 header h1{
   font-size:1.9rem;
-  letter-spacing:.6px;
 }
 
 /* ===== CONTENEDOR ===== */
@@ -63,7 +62,7 @@ header h1{
   margin:6px 0;
 }
 
-/* ===== LOGOS GRID ===== */
+/* ===== LOGOS ===== */
 .logos{
   display:flex;
   flex-wrap:wrap;
@@ -85,6 +84,8 @@ header h1{
   display:flex;
   align-items:center;
   justify-content:center;
+
+  position:relative; /* 🔑 NECESARIO PARA TOOLTIP */
 
   box-shadow:0 18px 40px rgba(0,0,0,.12);
   transition:.45s ease;
@@ -194,13 +195,13 @@ header h1{
       </a>
     </div>
 
-    <!-- FLEXIBIMEC CENTRADO -->
-  <div class="logo">
-   <a href="https://flexibimec.netlify.app/" target="_blank">
-     <img ...>
-     <div class="tooltip">FLEXIBIMEC</div>
-   <!-- FALTA CIERRE -->
-</div>
+    <!-- FLEXIBIMEC CORREGIDO -->
+    <div class="logo">
+      <a href="https://flexibimec.netlify.app/" target="_blank">
+        <img src="https://i.ibb.co/PZRQgJbr/Imagen1.png">
+        <div class="tooltip">FLEXIBIMEC</div>
+      </a>
+    </div>
 
     <div class="logo">
       <a href="https://sites.google.com/view/meclubeparte1/inicio" target="_blank">
